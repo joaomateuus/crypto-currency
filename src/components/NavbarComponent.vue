@@ -1,5 +1,6 @@
 <template>
-  <v-container>
+  <v-row>
+    
     <v-toolbar flat>
       <v-toolbar-title>Cripto Currency</v-toolbar-title>
 
@@ -13,8 +14,8 @@
         <v-btn text>News</v-btn>
       </v-toolbar-items>
     </v-toolbar>
-
-  </v-container>
+  
+  </v-row>
 </template>
 
 <script>

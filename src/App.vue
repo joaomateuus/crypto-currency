@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main style="background:black;">
       <router-view/>
     </v-main>
   </v-app>
@@ -16,3 +16,7 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+
+</style>

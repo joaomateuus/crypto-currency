@@ -1,24 +1,14 @@
 <template>
-  <v-container>
-    <v-card>
-        <v-card-title>
-            <v-text-field
-                v-model="search"
-                append-icon="mdi-magnify"
-                label="Search"
-                single-line
-                hide-details
-            >
-            </v-text-field>
-        </v-card-title>
-
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Coins</th> 
-                        <th>Price</th>
-                        <th></th>
-                    </tr>
+<div class="table-container">
+    <table class="table-md table-bordered" >
+        <thead>
+            <tr>
+                <th>Coins</th> 
+                <th>Price</th>
+                <th>High (24h)</th>
+                <th>Low (24h)</th>
+                <th>Market Cap</th>
+            </tr>
                 </thead>
                 <tbody>
                     <tr v-for="coin in coins" :key="coin.id">
@@ -26,15 +16,16 @@
                             <img :src="coin.image" alt="">
                             <span>{{ coin.name }}</span>
                         </td>
-                        <td>{{ coin.current_price }}</td>
-                        <td>{{ coin.symbol }}</td>
+                        <td>US$ {{ coin.current_price }}</td>
+                        <td>{{ coin.high_24h }}</td>
+                        <td>{{ coin.low_24h }}</td>
+                        <td>{{ coin.market_cap }}</td>
                     </tr>
                 </tbody>
-            </table>
+    </table>
+</div>          
 
 
-    </v-card>
-   </v-container>
 </template>
 
 <script>
@@ -68,6 +59,18 @@ img{
     height: 5vh;
     width:3vw ;
     padding-right: 1vh;
+}
+
+.table-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 4vh;
+}
+
+.table-md{
+    width: 70vw;  
 }
 
 

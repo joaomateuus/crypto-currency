@@ -13,10 +13,8 @@
     <TableComponent />
   </div>
 </div>
-
-  
-
 </template>
+
 <script>
 import NavbarComponent from '../components/NavbarComponent.vue';
 import TableComponent from '../components/TableComponent.vue';
@@ -33,7 +31,6 @@ export default {
    TableComponent,
    CarrouselComponent,
    //CarrouselSlider,
-
   },
   data() {
     return {

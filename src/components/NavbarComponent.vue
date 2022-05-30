@@ -1,7 +1,7 @@
 <template>
 <nav>
   <b-navbar variant="light" type="light">
-    <b-navbar-brand tag="h1" class="mb-0">CryptoCurrency</b-navbar-brand>
+    <b-navbar-brand tag="h1" class="mb-0">Crypto Currency</b-navbar-brand>
   </b-navbar>
 </nav>
  
